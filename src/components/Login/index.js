@@ -64,8 +64,8 @@ class Login extends Component {
             placeholder = "Abinesh"
             id = "username"
             onChange = { this.updateUsername }
-            /> <
-            /div>
+            /> < /
+            div >
         )
     }
 
@@ -84,8 +84,8 @@ class Login extends Component {
             placeholder = "Abinesh@2023"
             id = "password"
             onChange = { this.updatePassword }
-            /> <
-            /div>
+            /> < /
+            div >
         )
     }
 
@@ -104,19 +104,20 @@ class Login extends Component {
             img src = "https://assets.ccbp.in/frontend/react-js/logo-img.png"
             alt = "website logo"
             className = "website-logo-login-form" /
-            > { this.renderUsernameField() } { this.renderPasswordField() } <
+            >
+            { this.renderUsernameField() } { this.renderPasswordField() } <
             div >
             <
             button type = "submit"
             className = "login-button" >
             Login <
             /button> {
-                showErrorMsg && < p className = "error-msg" > * { errorMsg } < /p>} <
-                    /div> <
-                    /form> <
-                    /div>
-            )
-        }
+            showErrorMsg && < p className = "error-msg" > * { errorMsg } < /p>} < /
+            div > <
+            /form> < /
+            div >
+        )
     }
+}
 
-    export default Login
+export default Login
